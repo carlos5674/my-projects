@@ -1,0 +1,79 @@
+﻿1. Task Overview
+The purpose of this task is to annotate a set of news articles related to immigration, assessing their perceived reliability based on article titles and a brief contextual snippet (≈ first 200 words). These articles are sourced from a selection of different news websites representing different countries, and the goal is to examine how the tone, balance, and emotional language in article titles and snippets influence perceptions of media reliability. In order to only use copyright-free data, we used news articles from a common crawl news dataset that contains news articles from January 2017 - December 2019 from around the globe.
+Our job is to evaluate the tone, balance of information, and the presence of emotional or charged language in the titles and snippets of the articles. Each article should be annotated to assess whether it conveys information in a neutral, positive, or negative tone, whether it provides a balanced representation of immigration perspectives, and whether it uses emotional language meant to provoke a strong reaction. The overall goal of these annotations will be used to  explore whether certain countries’ media outlets are perceived as more credible than others based on these annotations.
+2. Categories for Annotation
+2.1 Tone of Title
+The tone of the title reflects the attitude or approach the article takes toward the topic. A title can shape how the audience perceives the content and the issue being discussed. Tone can vary from neutral to positive or negative, and it plays a crucial role in framing the subject matter.
+2.1.1 Read the Title Carefully
+* Focus on the key words in the title. Look for adjectives, verbs, or phrases that imply an opinion or emotion.
+* Key Indicators
+   * Words like review, analysis, study typically signal a neutral tone
+   * Words like growth, contribution, strengthen, diversity suggest a positive tone
+   * Words like crisis, threat, problem, influx, flood often indicate a negative tone
+2.1.2 Making the Annotation
+* Neutral Tone: Look for titles that describe a situation or event without expressing a clear opinion. These are usually informative and fact-based, without using strong language or clear bias.
+   * Example: “The New Effects of Immigration” (Data Point ID 18)
+* Positive Tone: Positive titles typically highlight the benefits or successes of immigration, emphasizing economic growth, cultural diversity, or community contributions.
+   * Example: “Immigrant workers help grow the U.S. economy” (Data Point ID 35)
+* Negative Tone: Negative titles will often emphasize problems, risks, or challenges linked to immigration, like security concerns, economic strain, or social problems.
+   * Example: “Unprecedented Surge in Chinese Illegal Immigration Raises Security Concerns” (Data Point ID 36)
+2.2 Balance of Information
+Balance of information refers to how fairly the article presents different perspectives on the topic, without favoring one side. An article is balanced if it provides multiple viewpoints, acknowledges complexities, and presents the topic with objectivity. Articles lacking balanced information may overemphasize one perspective or omit key details that could offer a more nuanced view.
+2.2.1 Access the Title and Snippet
+* Does the document mention both sides of the immigration issue, or does it focus on one perspective only?
+* Does the document focus more on one side of the issue and gloss over the other side?
+* A unbalanced title like a balanced one can contain words like but, however, despite but will usually provide more details to one side of the issue over the other. 
+* Do the title and the snippet support each other or offer differing viewpoints? A title can be used for clicks while the actual article provides further information.
+* Example: “US Media’s Sorry History of Abetting Immigration Panics: Donald Trump’s second presidential term has been underway for almost two months now, and every day brings headlines testifying to his determination to fulfil his promise of mass deportation of immigrants. Senate Republicans are moving forward with a bill allocating an additional $175 billion towards border militarization efforts—including deportations and border-wall construction.Deportees have been shipped to remote camps and militarized hotels in Panama and Costa Rica, facing horrifically unsanitary, overcrowded conditions, and denied access to aid, lawyers and press.” (Data Point ID 34)
+   * In this case, the title and snippet somewhat support each other. As we are only using the first three sentences of the article for ease of annotation, the snippet focuses primarily on Trump’s current immigration policy and not U.S. media.
+2.2.2 Making the Annotation
+* Balanced: If the title and snippet present multiple viewpoints equally or avoid taking a firm stance, mark this as balanced.
+* One-sided: If the title and snippet heavily favor one perspective on immigration, mark it as one-sided.
+2.3 Emotional or Charged Language
+Emotional or charged language is intended to provoke strong feelings in the reader, either positive or negative. This type of language is often used to push an agenda or to emphasize the urgency or importance of an issue. While emotional language can make a topic more relatable, it can also distort reality by simplifying complex issues or misleading the audience.
+2.3.1 Identifying Emotional or Charged words
+* Pay attention to adjectives, verbs, and nouns that might invoke emotions. These words are often not neutral, and their presence can indicate that the article is trying to trigger an emotional response.
+   * Fear/Anger: Words like crisis, invasion, overwhelmed, burden, threat imply a negative emotional tone.
+   * Sympathy: Words like victims, refugees, migrants seeking safety, struggling families are designed to generate sympathy for immigrants.
+   * Hopeful language: Words like opportunity, strengthen, contribute, enhance suggest a positive view and aim to evoke hope or optimism.
+2.3.3 Making the Annotation
+* Emotionally Charged: If the language in the title and snippet is meant to evoke a strong emotional response such as to provoke fear, sympathy, anger, or hope then mark it as emotionally charged
+* Neutral: If the language is informative and lacks emotional manipulation, mark it as neutral
+* Example: “Trump Is Sending Migrants From Around the World to Guantanamo. One Mother Speaks Out About Her Son’s Detention” (Data Point ID 5)
+3. Determining Label
+Assign a binary label (0 or 1) to each article based on its perceived reliability. Combine the assessments of the tone of the title, balance of information, and emotional language using both the title and snippet to assess credibility.
+3.1 Classification Guidelines
+Composite criterion with 4 categories: 
+Scoring
+	Emotionally Charged
+(primarily anecdotal)
+
+
+	Tone of the Title
+	Balance of Information
+	Political Bias / Neutrality of Author
+	Final Classification (Mean)
+	0-3
+	Uses highly charged, dramatic, or emotional language to provoke fear, sympathy, or outrage.
+	Title clearly implies a positive or negative stance. Uses evaluative language that frames immigration as good or bad.
+	Only one side of the issue presented. Ignores counterpoints or opposing perspectives.
+	Strong ideological framing. Advocates a political position or blames political groups.
+	Low Reliability
+	4-6
+	Some emotional elements present, but partly balanced by neutral or factual content.
+	Ambiguous or somewhat suggestive tone, but does not strongly imply bias.
+	Acknowledges other viewpoints but with unequal weight or superficial coverage.
+	Hints of political bias or framing, but includes some effort to remain balanced.
+	Moderate Reliability 
+	7-10
+	Neutral, informative language. No emotionally manipulative phrasing.
+	Neutral or descriptive tone using objective language. Reflects factual focus without judgment.
+	Presents multiple sides fairly. Offers complexity or nuance. Avoids advocacy or overgeneralization.
+	No evident political bias. Focused on data, expert analysis, or neutral reporting.
+	High Reliability
+	
+
+3.2 Assessing the Article as a Whole
+When determining the label, consider the article as a whole, including both the title and the snippet. While the tone and content of the title are important, the snippet should provide additional context to help you decide if the article is perceived as reliable.
+* If the article's title is emotional or biased, but the snippet provides a more neutral, balanced perspective, it might still be labeled as perceived as reliable..
+* If the title is neutral, but the snippet contains charged language or unbalanced information, it could be labeled as perceived not reliable.

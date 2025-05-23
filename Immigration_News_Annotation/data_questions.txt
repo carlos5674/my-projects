@@ -1,0 +1,13 @@
+1. Does the dataset contain data that might be considered confidential?
+No, the dataset does not contain any confidential data. The articles are publicly accessible and not under copyright, which means they can be freely shared and distributed.
+2. Is it possible to identify individuals from the dataset?
+Yes, it is possible to identify some individuals from the dataset. The dataset contains news articles focused on immigration and sometimes specifies specific individuals.
+3. Does the dataset contain data that might be considered sensitive in any way?
+The dataset contains sensitive content related to immigration policies, human rights, and socio-political issues.
+4. What was the sampling strategy?
+The sampling strategy involved selecting the 25 most recent articles related to immigration from each of 20 different news websites, representing 10 countries (with two websites per country). 
+5. Was the raw data saved in addition to the preprocessed/cleaned/labeled data?
+Yes, the full articles were stored separately, in addition to the data used for annotation, which consists of titles and 300-word snippets of the articles. This ensures that the raw data is available for reference if needed. 6. Is there anything about the dataset’s composition or preprocessing that might impact future uses?
+We preprocessed our data by selecting only the title and the first 300-words of articles, so it would impact any future uses that require the full articles. 
+7. Are there tasks for which the dataset should not be used?
+This dataset should not be used to profile immigrants in any way. The focus of this dataset is to judge the perceived reliability of ARTICLES on immigration, but should not be used to judge actual immigrants in any way.

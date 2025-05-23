@@ -1,0 +1,362 @@
+.auth-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .auth-tabs {
+    display: flex;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 30px;
+  }
+
+  .auth-tab-pw {
+    color: #FF9F00;
+    display: flex;
+    border-bottom: 2px solid #FF9F00;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+
+  .auth-tab {
+    padding: 10px 0;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    color: #888;
+  }
+
+  .auth-tab.active {
+    color: #FF9F00;
+    border-bottom: 2px solid #FF9F00;
+    margin-bottom: -2px;
+  }
+
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .form-group label {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .form-group input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 100%;
+    height: 48px;
+    box-sizing: border-box;
+  }
+  
+  .password-input {
+    position: relative;
+    width: 100%;
+  }
+
+  .password-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    color: #888;
+  }
+
+  .forgot-password {
+    text-align: right;
+  }
+
+  .forgot-password a {
+    color: #FF9F00;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .auth-button {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 48px;
+  }
+
+  .auth-button.primary {
+    background-color: #FF9F00;
+    color: white;
+  }
+
+  .auth-button.secondary {
+    background-color: white;
+    border: 1px solid #ddd;
+    color: #333;
+  }
+
+  .auth-button.assistant {
+    background-color: #a3e635;
+    color: #333;
+  }
+
+  .auth-button.github {
+    background-color: white;
+    border: 1px solid #ddd;
+    color: #333;
+  }
+
+  .auth-button.google {
+    background-color: white;
+    border: 1px solid #ddd;
+    color: #333;
+  }
+
+  .divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #888;
+  }
+
+  .divider::before,
+  .divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #eee;
+  }
+
+  .divider span {
+    padding: 0 10px;
+  }
+
+  .auth-footer {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+  }
+
+  .auth-footer a {
+    color: #FF9F00;
+    text-decoration: none;
+  }
+
+  /* Group Selection Styles */
+  .group-selection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+  }
+
+  .group-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .group-box {
+    background-color: #2b2b2b;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    gap: 1.5rem;
+  }
+  
+  .group-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+  
+  .group-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .group-card {
+    background-color: #3a3a3a;
+    padding: 1.2rem;
+    border-radius: 12px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .group-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+  }
+  
+  .group-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+  
+  .divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #888;
+    margin: 1rem 0;
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .divider span {
+    padding: 0 10px;
+  }
+  
+  .existing-group-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+    background-color: #1e1e1e;
+    color: white;
+  }
+  
+  .group-info-box {
+    background-color: #2b2b2b;
+    padding: 2.5rem;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    text-align: center;
+  }
+  
+  .group-info-box h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .group-info-box p {
+    margin: 0;
+    font-size: 1rem;
+    color: #ccc;
+  }
+  
+  .group-info-box .auth-button {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .no-groups-message {
+    text-align: center;
+    color: #888;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+
+  .group-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .group-form input {
+    padding: 12px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #2a2a2a;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .group-form input::placeholder {
+    color: #aaa;
+  }
+  
+  .group-form .auth-button {
+    margin-top: 10px;
+  }
+
+  .group-name-display {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  .group-member-list {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: #ccc;
+  }
+  
+  .group-member {
+    text-align: center;
+    background-color: #3a3a3a;
+    padding: 0.75rem;
+    border-radius: 10px;
+  }
+  
+  .member-role {
+    font-size: 0.9rem;
+    color: #888;
+  }
+
+  .group-form input[type="text"] {
+    margin-bottom: 12px;
+  }
+  
+  .group-title {
+    margin-bottom: 10px;
+  }
+  
+  
+  

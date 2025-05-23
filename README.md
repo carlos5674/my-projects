@@ -41,4 +41,4 @@ Secure file storage and sharing system in Go using AES, HMAC, and public-key cry
 ## 📬 Contact
 
 I'm currently seeking opportunities in software engineering, systems development, or ML engineering, but happy to explore any opportunity in tech.
-Feel free to [connect with me](carlos5674@berkeley.edu) or explore any of the folders above.
+Feel free to [connect with me](mailto:carlos5674@berkeley.edu) or explore any of the folders above.

@@ -1,0 +1,27 @@
+# macOS system files
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Java
+*.class
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+
+# Output and build files
+out/
+build/
+bin/
+
+# Node projects
+node_modules/
+
+# Archives or binaries
+*.zip
+*.jar
+*.log
